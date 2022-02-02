@@ -42,8 +42,8 @@ public static class Moogle
                 string contenido = File.ReadAllText(file);
                
                 //creo una expression regular con la palagra a buscar y busco todas las veces q esa palabra se repite en el texto 
-                Regex nuevo = new Regex(palabra);
-                var result = nuevo.Matches(contenido);
+                Regex nuevo = new Regex(palabra.ToLower());
+                var result = nuevo.Matches(contenido.ToLower());
 
                 //si se repite mas de una vez calculo el tf
                 if (result.Count > 0)
