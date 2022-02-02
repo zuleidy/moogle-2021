@@ -14,5 +14,5 @@ public static class Moogle
 
         return new SearchResult(items, query);
     }
-    public static void Ordenar(){}
+
 }
